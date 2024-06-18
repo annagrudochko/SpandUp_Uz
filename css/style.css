@@ -69,7 +69,7 @@ nav,
 .card-panel,
 .card,
 .toast,
-.btn,   
+.btn,
 .btn-large,
 .btn-small,
 .btn-floating,
@@ -129,10 +129,10 @@ nav,
 .sidenav {
     position: fixed;
     width: 207px;
-    right: 0;
+    left: 0;
     top: 0;
     margin: 0;
-    -webkit-transform: translateX(100%);
+    -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
     height: 100%;
     height: calc(100% + 60px);
@@ -144,10 +144,9 @@ nav,
     will-change: transform;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-transform: translateX(105%);
-    transform: translateX(100%);
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
     padding-top: 63px;
-    /* transition: transform 0.3s ease-out; */
 }
 
 .sidenav.right-aligned {
@@ -180,10 +179,10 @@ nav,
     height: 48px;
     line-height: 48px;
     padding: 0 32px;
+    text-align: left;
     text-decoration: none;
-    text-align: right;
-    font-weight: 500;
 }
+
 
 .sidenav li>a:hover {
     background-color: rgba(0, 0, 0, 0.05);
@@ -303,7 +302,6 @@ nav,
 }
 
 .sidenav.sidenav-fixed {
-    right: 0;
     left: 0;
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -335,7 +333,7 @@ nav,
     left: 0;
     right: 0;
     opacity: 0;
-    height: 100vh;
+    height: 120vh;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 997;
     display: none;
